@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './download.module.css';
+import Apple from '../../assets/icons/AppleWhiteLogo.svg';
+import GooglePlay from '../../assets/icons/GooglePlayWhiteLogo.svg';
+import DownloadLogo from '../../assets/images/download-logo.svg';
 
 const Download = () => {
   return (
@@ -18,7 +21,7 @@ const Download = () => {
           <div className={styles.downloadApp}>
             <a href="#">
               <div>
-                <img src="/src/assets/icons/AppleWhiteLogo.svg" alt="" />
+                <img src={Apple} alt="AppleLogo" loading="lazy" />
               </div>
               <span>
                 <h5>Download via</h5>
@@ -27,7 +30,7 @@ const Download = () => {
             </a>
             <a href="#">
               <div>
-                <img src="/src/assets/icons/GooglePlayWhiteLogo.svg" alt="" />
+                <img src={GooglePlay} alt="GooglePlay" loading="lazy" />
               </div>
               <span>
                 <h5>Download via</h5>
@@ -38,7 +41,7 @@ const Download = () => {
         </div>
         <div className={styles.rightSide}>
           <div>
-            <img src="/src/assets/images/download-logo.svg" alt="" />
+            <img src={DownloadLogo} alt="Logo" loading="lazy" />
           </div>
         </div>
       </div>
