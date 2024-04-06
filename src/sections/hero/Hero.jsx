@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './hero.module.css';
 import Button from '../../components/button/Button';
+import firstLine from '../../assets/icons/firstLine.svg';
+import secondLine from '../../assets/icons/secondLine.svg';
+import cards from '../../assets/images/cards.svg';
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <img src="/src/assets/icons/firstLine.svg" alt="firstLine" />
-      <img src="/src/assets/icons/secondLine.svg" alt="secondLine" />
+      <img src={firstLine} alt="firstLine" loading="lazy" />
+      <img src={secondLine} alt="secondLine" loading="lazy" />
       <div className={`${styles.heroWrapper} container`}>
         <div className={`${styles.leftSide}`}>
           <h1>
@@ -23,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.rightSide}>
-          <img src="/src/assets/images/cards.svg" alt="cards" />
+          <img src={cards} alt="cards" loading="lazy" />
         </div>
       </div>
     </section>
