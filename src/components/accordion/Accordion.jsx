@@ -1,5 +1,7 @@
 import React from 'react';
 import './accordion.css';
+import Smartphone from '../../assets/icons/smartphone.svg';
+import Arrow from '../../assets/icons/arrow.svg';
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -15,12 +17,12 @@ const Accordion = ({ title, children }) => {
         onClick={toggleAccordion}
       >
         <div className="accordion-image">
-          <img src="/src/assets/icons/smartphone.svg" alt="" />
+          <img src={Smartphone} alt="Smartphone" loading="lazy" />
           <p>{title}</p>
         </div>
 
         <span className={`material-symbols-outlined ${isOpen ? 'active' : ''}`}>
-          <img src="/src/assets/icons/arrow.svg" alt="" />
+          <img src={Arrow} alt="Arrow" loading="lazy" />
         </span>
       </div>
 

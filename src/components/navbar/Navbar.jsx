@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './navbar.module.css';
 import Button from '../button/Button';
+import Logo from '../../assets/icons/logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
       <div className={`${isOpen ? styles.active : ''} ${styles.content}`}>
         <a href="#" className={styles.logo}>
           <div>
-            <img src="/src/assets/icons/logo.svg" alt="" />
+            <img src={Logo} alt="Logo" />
           </div>
           Teslabank
         </a>
