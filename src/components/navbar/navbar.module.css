@@ -1,0 +1,147 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.list {
+  position: relative;
+  top: 0;
+  left: -105px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.list li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: 0.3s;
+  color: #333333;
+}
+
+.list li a:hover {
+  color: #EB3850;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.account button {
+  width: 10rem;
+  height: 55px;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  background: #ffffff;
+  color: #EB3850;
+}
+
+.account button:hover {
+  background: #e7e7e7;
+}
+
+.account a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.account a:hover {
+  color: #e7e7e7;
+}
+
+.btnMobile {
+  display: none;
+}
+
+/* Media query ~ 
+Smartphone / Tablet 
+*/
+@media (max-width: 1024px) {
+  .account {
+    display: none;
+  }
+  .list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 0px;
+    background: #f2f4fd;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .content.active .list {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .list li a {
+    display: block;
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .btnMobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  .hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .content.active .hamburger {
+    border-top-color: transparent;
+  }
+  .content.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .content.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+.hero {
+  width: 100%;
+  padding: 10rem 1.5rem;
+  position: relative;
+}
+
+.heroWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  width: 55%;
+}
+
+.rightSide {
+  position: relative;
+  top: 0;
+  left: 150px;
+  width: 45%;
+}
+
+.leftSide h1 {
+  font-size: 3.5rem;
+  line-height: 1.4em;
+}
+
+.leftSide p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  color: #333333;
+}
+
+.buttonControl {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+
+.hero > img {
+  width: 100%;
+}
+
+.hero > img:nth-child(1) {
+  position: absolute;
+  top: 55px;
+  left: -65px;
+  z-index: 6;
+}
+
+.hero > img:nth-child(2) {
+  position: absolute;
+  top: 550px;
+  left: 450px;
+  width: 70%;
+  z-index: 6;
+}
+
+.rightSide img {
+  width: 100%;
+  animation: float 2s ease .6s infinite alternate;
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+
+/* Media query */
+
+/* Smartphone */ 
+@media screen and (max-width: 768px) {
+  .leftSide {
+    width: 100%;
+  }
+
+  .rightSide {
+   display: none;
+  }
+
+  .leftSide h1 {
+    font-size: 2.6rem;
+    line-height: 1.4em;
+  }
+
+  .leftSide p {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+
+  .buttonControl button {
+    font-size: 14px;
+  }
+
+  .buttonControl a {
+    font-size: 16px;
+   }
+
+   .buttonControl a::after {
+    display: none;
+  }
+
+  .hero > img {
+    display: none;
+  }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .leftSide {
+    width: 100%;
+  }
+
+  .rightSide {
+   display: none;
+  }
+
+  .leftSide h1 {
+    font-size: 3rem;
+    line-height: 1.4em;
+  }
+
+  .leftSide p {
+    font-size: 1.6rem;
+    line-height: 1.4em;
+  }
+
+  .buttonControl button {
+    font-size: 14px;
+    width: 35%;
+  }
+
+  .buttonControl a {
+    font-size: 16px;
+    width: 100%;
+   }
+
+   .buttonControl a::after {
+    content: "";
+    display: none;
+    width: 75%;
+    height: 2px;
+    color: #EB3850;
+    background: #EB3850;
+  }
+
+  .hero > img {
+    display: none;
+  }
+}
+
+
+
+
+
+

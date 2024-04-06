@@ -1,0 +1,71 @@
+.faq {
+  width: 100%;
+  padding: 6.25rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.content span {
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #EB3850;
+}
+
+.content h2 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content p {
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 6.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6.25rem 0;
+  }
+  
+}
+
+/* Media query 
+  Tablet
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6.25rem 0;
+  }
+  
+ }

@@ -1,0 +1,161 @@
+.about {
+  width: 100%;
+  padding: 9rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  width: 50%;
+  padding: 1.5rem;
+}
+
+.rightSide {
+  width: 50%;
+  padding: 3.75rem 1.5rem;
+}
+
+.leftSide {
+  position: relative;
+}
+
+.leftSide img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1.5rem;
+  border-radius: 0.9rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: float 2s ease .6s infinite alternate;
+}
+
+.leftSide img:nth-child(3) {
+  position: absolute;
+  top: 35%;
+  right: 31%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1.5rem;
+  border-radius: 0.9rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: float 2s ease .6s infinite alternate;
+}
+
+.leftSide img:nth-child(4) {
+  position: absolute;
+  top: 65%;
+  left: -6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1.5rem;
+  border-radius: 0.9rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: float 2s ease .6s infinite alternate;
+}
+
+/* RIGHT SIDE */ 
+.rightSide h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.rightSide p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+.details {
+  margin-top: 3rem;
+}
+
+.details .list li {
+  display: flex;
+  gap: 2rem;
+  margin: 6rem 0;
+}
+
+.boxImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.5rem;
+  transition: width .4s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.boxImg:hover {
+  width: 4.25rem;
+}
+
+.details .list li span h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+
+.details .list li span p {
+  position: relative;
+  top: -10px;
+  left: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+/* FLOATING ANIMATION */ 
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+
+/* Media Query 
+  Smartphone ~ Tablet
+*/
+@media screen and (max-width: 1024px){
+	/* Estilizações CSS */
+  .leftSide {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .boxImg {
+    display: none;
+  }
+
+  .details .list li span p {
+    font-size: 1.3rem;
+  }
+}
+
+

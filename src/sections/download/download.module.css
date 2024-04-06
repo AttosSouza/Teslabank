@@ -1,0 +1,146 @@
+.download {
+  width: 100%;
+  padding: 6.25rem 1.5rem;
+  background-color: #fff2f4;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.leftSide h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.leftSide p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+.downloadApp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.downloadApp a {
+  display: flex;
+  align-items: center;
+  margin-top: 3.75rem;
+  gap: 1.625rem;
+  width: 14.688rem;
+  height: 4.063rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #333333;
+}
+
+.download a span {
+  width: 5.625rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.download a span h5 {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.download a span p {
+  position: relative;
+  top: -27px;
+  left: 0;
+  font-size: 18px;
+  font-weight: 700;
+  width: 150px;
+  color: #ffffff;
+}
+
+.rightSide div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  border-radius: 55px;
+  background: #eb3850;
+}
+
+.rightSide div img{
+  width: 180px;
+  height: 180pxx;
+  animation: floatHeart 2s ease infinite;
+}
+
+/* Media query 
+  ~ Smartphone ~
+*/
+@media screen and (max-width: 768px) {
+  .leftSide {
+    width: 100%;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .leftSide h2 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .leftSide p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+  }
+
+  .downloadApp a {
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .leftSide p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Media query 
+  ~ Tablet ~
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .leftSide {
+    width: 100%;
+  }
+
+  .rightSide {
+    display: none;
+  }
+}
+
+
+/* CSS Floating Animation */ 
+@keyframes floatHeart {
+  0% {
+    width: 180px;
+  }
+
+  50% {
+      width: 200px;
+  }
+  100% {
+      width: 180px;
+  }
+}

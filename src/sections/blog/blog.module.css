@@ -1,0 +1,107 @@
+.blog {
+  width: 100%;
+  padding: 6.25rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.title a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #EB3850;
+}
+
+.title img {
+  height: 1.875rem;
+}
+
+.cards {
+  margin-top: 4.063rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card img {
+  border-radius: 1rem;
+}
+
+.card h3 {
+  margin: 1.5rem 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.card p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .title a {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+}
+
+/* Media query
+ Tablet
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ .cards {
+  margin-top: 4.063rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+  }
+
+  .card {
+    width: 100%;
+    margin: 36px 0;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .card h3 {
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .card p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: #333333;
+  }
+}
