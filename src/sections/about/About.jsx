@@ -1,15 +1,22 @@
 import React from 'react';
 import styles from './about.module.css';
+import Smartphone from '../../assets/images/smartphone.png';
+import Circle from '../../assets/icons/check-circle.svg';
+import Pointer from '../../assets/icons/mouse-pointer.svg';
+import Heart from '../../assets/icons/heart.svg';
+import Dollar from '../../assets/icons/dollar-sign.svg';
+import SecondSmartphone from '../../assets/icons/smartphone.svg';
+import Smile from '../../assets/icons/smile.svg';
 
 const About = () => {
   return (
     <section className={styles.about}>
       <div className={`${styles.wrapper} container`}>
         <div className={styles.leftSide}>
-          <img src="/src/assets/images/smartphone.png" alt="" />
-          <img src="/src/assets/icons/check-circle.svg" alt="" />
-          <img src="/src/assets/icons/mouse-pointer.svg" alt="" />
-          <img src="/src/assets/icons/heart.svg" alt="" />
+          <img src={Smartphone} alt="smartphone" loading="lazy" />
+          <img src={Circle} alt="checkCircle" loading="lazy" />
+          <img src={Pointer} alt="pointer" loading="lazy" />
+          <img src={Heart} alt="heart" loading="lazy" />
         </div>
         <div className={styles.rightSide}>
           <h2>
@@ -24,7 +31,7 @@ const About = () => {
             <ul className={styles.list}>
               <li>
                 <div className={styles.boxImg}>
-                  <img src="/src/assets/icons/dollar-sign.svg" alt="" />
+                  <img src={Dollar} alt="dollar" loading="lazy" />
                 </div>
                 <span>
                   <h4>Seu dinheiro rendendo mais</h4>
@@ -33,7 +40,11 @@ const About = () => {
               </li>
               <li>
                 <div className={styles.boxImg}>
-                  <img src="/src/assets/icons/smartphone.svg" alt="" />
+                  <img
+                    src={SecondSmartphone}
+                    alt="secondSmartphone"
+                    loading="lazy"
+                  />
                 </div>
                 <span>
                   <h4>Conta digital 100% grátis</h4>
@@ -45,7 +56,7 @@ const About = () => {
               </li>
               <li>
                 <div className={styles.boxImg}>
-                  <img src="/src/assets/icons/smile.svg" alt="" />
+                  <img src={Smile} alt="smile" loading="lazy" />
                 </div>
                 <span>
                   <h4>Cartão sem anuidade</h4>
