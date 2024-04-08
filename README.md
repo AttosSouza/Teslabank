@@ -1,8 +1,31 @@
-# React + Vite
+# Teslabank
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![tesla](https://github.com/AttosSouza/Teslabank/assets/87350423/e3aba9e5-c424-4ecb-b2c2-4c06ee75a54e)
 
-Currently, two official plugins are available:
+## O TeslaBank é uma landing page de um banco digital.
+Desenvolvida com o intuito de colocar em prática habilidades com React.js e CSS Module.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologias usadas neste projeto:
+
+- React.js
+- CSS Modules
+- FlexBox
+- Vite
+- Vercel
+
+Link para visitar o projeto: [Teslabank](https://teslabank-nu.vercel.app/)
+
+-----------------------------------------------------------------------------------------
+
+## TeslaBank is a landing page for a digital bank.
+developed to put React.js, CSS Module and FlexBox skills into practice.
+
+Technologies used in this project:
+
+- React.js
+- CSS Modules
+- FlexBox
+- Vite
+- Vercel
+
+You can see the project right here: [Teslabank](https://teslabank-nu.vercel.app/)
