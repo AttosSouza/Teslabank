@@ -4,7 +4,7 @@
   background-color: #fff2f4;
 }
 
-.content {
+.downloadContentGroup {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,13 +23,13 @@
   color: #333333;
 }
 
-.downloadApp {
+.downloadInfo {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.downloadApp a {
+.downloadInfo a {
   display: flex;
   align-items: center;
   margin-top: 3.75rem;
@@ -104,7 +104,7 @@
     color: #333333;
   }
 
-  .downloadApp a {
+  .downloadInfo a {
     justify-content: center;
     margin: 0;
     width: 100%;

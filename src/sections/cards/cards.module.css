@@ -4,7 +4,7 @@
   background-color: #ffffff;
 }
 
-.content span {
+.cardsContentGroup span {
   display: block;
   font-size: 1.3rem;
   font-weight: 500;
@@ -13,14 +13,14 @@
   color: #EB3850;
 }
 
-.content h2 {
+.cardsContentGroup h2 {
   text-align: center;
   margin-top: 0.9rem;
   font-size: 3rem;
   font-weight: 500;
 }
 
-.content p {
+.cardsContentGroup p {
   text-align: center;
   margin-top: 20px;
   font-size: 1.3rem;
@@ -29,11 +29,11 @@
   color: #333333;
 }
 
-.content img {
+.cardsContentGroup img {
   margin: 2.625rem auto;
 }
 
-.buttonControl {
+.accessButons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@
 }
 
 
-.buttonControl a {
+.accessButons a {
   margin: 0;
   align-items: center;
   text-align: center;
@@ -55,20 +55,20 @@
   ~ Smartphone ~
 */
 @media screen and (max-width: 768px) {
-  .content h2 {
+  .cardsContentGroup h2 {
     font-size: 2rem;
   }
   
-  .content p {
+  .cardsContentGroup p {
     font-size: 1.2rem;
   }
 
-  .buttonControl a {
+  .accessButons a {
     width: 100%;
     font-size: 20px;
   }
 
-  .buttonControl a::after {
+  .accessButons a::after {
     display: none;
   }
 }

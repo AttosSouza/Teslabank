@@ -4,20 +4,27 @@
   background-color: #ffffff;
 }
 
-.content span {
+.testimonialsContentGroup span {
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #EB3850;
 }
 
-.content h2 {
+.testimonialsContentGroup h2 {
   margin-top: 0.9rem;
   font-size: 3rem;
   font-weight: 600;
 }
 
-.people {
+.testimonialsContentGroup > h2 > span {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: none;
+  color: #333333;
+} 
+
+.peopleContainer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 4rem;
@@ -57,11 +64,11 @@
 
 @media screen and (max-width: 1024px){
 	/* Estilizações CSS */
-  .content h2 {
+  .testimonialsContentGroup h2 {
     font-size: 2rem;
   }
 
-  .content > h2 > span {
+  .testimonialsContentGroup > h2 > span {
     font-size: 2rem !important;
   }
 }

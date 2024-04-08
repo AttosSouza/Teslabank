@@ -4,17 +4,24 @@
   background-color: #fff2f4;
 }
 
-.content span {
+.innovationContentGroup span {
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #EB3850;
 }
 
-.content h2 {
+.innovationContentGroup h2 {
   margin-top: 0.9rem;
   font-size: 3rem;
   font-weight: 500;
+}
+
+.innovationContentGroup > h2 > span {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: none;
+  color: #EB3850;
 }
 
 .cards {
@@ -78,7 +85,7 @@
 
 @media screen and (max-width: 768px){
 	/* Estilizações CSS */
-  .content h2 {
+  .innovationContentGroup h2 {
     font-size: 1.5rem;
   }
   
@@ -90,7 +97,7 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .content h2 {
+  .innovationContentGroup h2 {
     font-size: 2.5rem;
   }
   

@@ -5,7 +5,7 @@ import Button from '../../components/button/Button';
 const Cards = () => {
   return (
     <section className={styles.cards}>
-      <div className={`${styles.content} container`}>
+      <div className={`${styles.cardsContentGroup} container`}>
         <span>#cartões</span>
         <h2>
           Cartão perfeito para
@@ -18,7 +18,7 @@ const Cards = () => {
           a você.
         </p>
         <img src="/src/assets/images/cards-2.svg" alt="" />
-        <div className={styles.buttonControl}>
+        <div className={styles.accessButons}>
           <Button type="primary" href="#">
             Abrir uma conta
           </Button>

@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={`${styles.content} container`}>
+      <div className={`${styles.footerContentGroup} container`}>
         <p>
           Copyright © 2024 Challenge by <strong>eFront.</strong>
         </p>

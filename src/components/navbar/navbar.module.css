@@ -15,7 +15,7 @@
   color: #333333;
 }
 
-.list {
+.links {
   position: relative;
   top: 0;
   left: -105px;
@@ -24,24 +24,24 @@
   gap: 1.5rem;
 }
 
-.list li a {
+.links li a {
   font-size: 1.1rem;
   font-weight: 600;
   transition: 0.3s;
   color: #333333;
 }
 
-.list li a:hover {
+.links li a:hover {
   color: #EB3850;
 }
 
-.account {
+.accessMenu {
   display: flex;
   align-items: center;
   gap: 1.7rem;
 }
 
-.account button {
+.accessMenu button {
   width: 10rem;
   height: 55px;
   padding: 1rem 0;
@@ -52,18 +52,18 @@
   color: #EB3850;
 }
 
-.account button:hover {
+.accessMenu button:hover {
   background: #e7e7e7;
 }
 
-.account a {
+.accessMenu a {
   font-size: 1.3rem;
   font-weight: 600;
   text-transform: capitalize;
   color: #FFFFFF;
 }
 
-.account a:hover {
+.accessMenu a:hover {
   color: #e7e7e7;
 }
 
@@ -78,7 +78,7 @@ Smartphone / Tablet
   .account {
     display: none;
   }
-  .list {
+  .links {
     display: block;
     position: absolute;
     width: 100%;
@@ -91,12 +91,12 @@ Smartphone / Tablet
     visibility: hidden;
     overflow-y: hidden;
   }
-  .content.active .list {
+  .content.active .links {
     height: 100vh;
     visibility: visible;
     overflow-y: auto;
   }
-  .list li a {
+  .links li a {
     display: block;
     text-align: center;
     padding: 3rem 0;

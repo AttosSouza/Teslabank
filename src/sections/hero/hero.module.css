@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.heroWrapper {
+.heroGroup {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,7 @@
   color: #333333;
 }
 
-.buttonControl {
+.accessButtons {
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -99,15 +99,15 @@
     line-height: 1.4em;
   }
 
-  .buttonControl button {
+  .accessButtons button {
     font-size: 14px;
   }
 
-  .buttonControl a {
+  .accessButtons a {
     font-size: 16px;
    }
 
-   .buttonControl a::after {
+   .accessButtons a::after {
     display: none;
   }
 
@@ -137,17 +137,17 @@
     line-height: 1.4em;
   }
 
-  .buttonControl button {
+  .accessButtons button {
     font-size: 14px;
     width: 35%;
   }
 
-  .buttonControl a {
+  .accessButtons a {
     font-size: 16px;
     width: 100%;
    }
 
-   .buttonControl a::after {
+   .accessButtons a::after {
     content: "";
     display: none;
     width: 75%;

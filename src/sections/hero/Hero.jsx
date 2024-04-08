@@ -10,7 +10,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <img src={firstLine} alt="firstLine" loading="lazy" />
       <img src={secondLine} alt="secondLine" loading="lazy" />
-      <div className={`${styles.heroWrapper} container`}>
+      <div className={`${styles.heroGroup} container`}>
         <div className={`${styles.leftSide}`}>
           <h1>
             TeslaBank <br /> Banco{' '}
@@ -20,7 +20,7 @@ const Hero = () => {
             Com TeslaBank, você pode realizar transferências <br />
             bancárias com zero taxa e pagar suas contas.
           </p>
-          <div className={styles.buttonControl}>
+          <div className={styles.accessButtons}>
             <Button type="primary">Abrir uma conta</Button>
             <Button href="#">Abrir uma conta</Button>
           </div>

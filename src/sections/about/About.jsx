@@ -11,7 +11,7 @@ import Smile from '../../assets/icons/smile.svg';
 const About = () => {
   return (
     <section className={styles.about}>
-      <div className={`${styles.wrapper} container`}>
+      <div className={`${styles.aboutGroup} container`}>
         <div className={styles.leftSide}>
           <img src={Smartphone} alt="smartphone" loading="lazy" />
           <img src={Circle} alt="checkCircle" loading="lazy" />
@@ -20,7 +20,7 @@ const About = () => {
         </div>
         <div className={styles.rightSide}>
           <h2>
-            Abra sua conta <span style={{ color: '#EB3850' }}>gratuita!</span>
+            Abra sua conta <span>gratuita!</span>
           </h2>
           <p>
             Envie e receba dinheiro de forma mais prática e rápida. Faça Pix,
@@ -30,7 +30,7 @@ const About = () => {
           <div className={styles.details}>
             <ul className={styles.list}>
               <li>
-                <div className={styles.boxImg}>
+                <div className={styles.imgContainer}>
                   <img src={Dollar} alt="dollar" loading="lazy" />
                 </div>
                 <span>
@@ -39,7 +39,7 @@ const About = () => {
                 </span>
               </li>
               <li>
-                <div className={styles.boxImg}>
+                <div className={styles.imgContainer}>
                   <img
                     src={SecondSmartphone}
                     alt="secondSmartphone"
@@ -55,7 +55,7 @@ const About = () => {
                 </span>
               </li>
               <li>
-                <div className={styles.boxImg}>
+                <div className={styles.imgContainer}>
                   <img src={Smile} alt="smile" loading="lazy" />
                 </div>
                 <span>

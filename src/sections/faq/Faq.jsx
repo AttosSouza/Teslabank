@@ -23,7 +23,7 @@ const Faq = () => {
 
   return (
     <section className={styles.faq}>
-      <div className={`${styles.content} container`}>
+      <div className={`${styles.faqContentGroup} container`}>
         <span>#ajuda</span>
         <h2>Ficou alguma dúvida?</h2>
         <p>Confira nossa lista de perguntas frequentes que recebemos.</p>

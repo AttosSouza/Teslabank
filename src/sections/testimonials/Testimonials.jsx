@@ -4,24 +4,14 @@ import styles from './testimonials.module.css';
 const Testimonials = () => {
   return (
     <section className={styles.testimonials}>
-      <div className={`${styles.content} container`}>
+      <div className={`${styles.testimonialsContentGroup} container`}>
         {' '}
         <span>#depoimentos</span>
         <h2>
           TeslaBank fora das telinhas:
-          <br />{' '}
-          <span
-            style={{
-              fontWeight: '400',
-              textTransform: 'none',
-              fontSize: '36px',
-              color: '#333333',
-            }}
-          >
-            Veja o que estão falam sobre nós.
-          </span>
+          <br /> <span>Veja o que estão falam sobre nós.</span>
         </h2>
-        <div className={styles.people}>
+        <div className={styles.peopleContainer}>
           <div className={styles.card}>
             <h4>NIKOLA TESLA</h4>
             <p>

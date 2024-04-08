@@ -65,20 +65,10 @@ const Innovation = () => {
 
   return (
     <section className={styles.innovation}>
-      <div className={`${styles.content} container`}>
+      <div className={`${styles.innovationContentGroup} container`}>
         <span>#inovação</span>
         <h2>
-          Quais as vantagens <br /> de usar{' '}
-          <span
-            style={{
-              color: '#EB3850',
-              fontSize: '36px',
-              fontWeight: '600',
-              textTransform: 'none',
-            }}
-          >
-            TeslaBank?
-          </span>
+          Quais as vantagens <br /> de usar <span>TeslaBank?</span>
         </h2>
 
         <div className={styles.cards}>

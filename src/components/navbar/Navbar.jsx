@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
           Teslabank
         </a>
-        <ul className={styles.list}>
+        <ul className={styles.links}>
           <li>
             <a href="#">Benefícios</a>
           </li>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <a href="#">Blog</a>
           </li>
         </ul>
-        <div className={styles.account}>
+        <div className={styles.accessMenu}>
           <Button href="#">Entrar</Button>
           <Button type="primary">Abrir conta</Button>
         </div>

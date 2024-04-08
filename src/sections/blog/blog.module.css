@@ -4,18 +4,18 @@
   background-color: #ffffff;
 }
 
-.title {
+.headerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.title h2 {
+.headerContent h2 {
   font-size: 3rem;
   font-weight: 500;
 }
 
-.title a {
+.headerContent a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -24,7 +24,7 @@
   color: #EB3850;
 }
 
-.title img {
+.headerContent img {
   height: 1.875rem;
 }
 
@@ -54,7 +54,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .title a {
+  .headerContent a {
     font-size: 1.1rem;
   }
 

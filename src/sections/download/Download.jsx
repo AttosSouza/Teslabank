@@ -7,7 +7,7 @@ import DownloadLogo from '../../assets/images/download-logo.svg';
 const Download = () => {
   return (
     <section className={styles.download}>
-      <div className={`${styles.content} container`}>
+      <div className={`${styles.downloadContentGroup} container`}>
         <div className={styles.leftSide}>
           <h2>
             Uma nova experiência <br /> em{' '}
@@ -18,7 +18,7 @@ const Download = () => {
             <br /> experiência única para atender às suas necessidades.
           </p>
 
-          <div className={styles.downloadApp}>
+          <div className={styles.downloadInfo}>
             <a href="#">
               <div>
                 <img src={Apple} alt="AppleLogo" loading="lazy" />
